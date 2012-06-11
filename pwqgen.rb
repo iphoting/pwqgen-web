@@ -6,6 +6,7 @@ require 'sinatra'
 require 'haml'
 
 get %r{/te?xt} do
+	content_type 'text/plain'
 	`pwqgen`
 end
 

@@ -16,5 +16,5 @@ get '/' do
 end
 
 def gen_pass
-	`pwqgen.static`
+	`./pwqgen.static`
 end

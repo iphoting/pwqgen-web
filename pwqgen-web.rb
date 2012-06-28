@@ -5,6 +5,7 @@ Bundler.setup(:default, ENV['RACK_ENV'])
 require 'sinatra'
 require 'haml'
 require 'rack/ssl-enforcer'
+require 'sys/uname'
 require 'pwqgen'
 
 configure :production do
@@ -23,9 +24,9 @@ get '/' do
 end
 
 def gen_pass
-	begin
+	if Sys::Uname.sysname.to_s.downcase.include? "linux" then
 		`./pwqgen.static`
-	rescue Errno::ENOEXEC
+	else
 		Pwqgen.generate
 	end
 end

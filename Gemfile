@@ -8,6 +8,7 @@ gem 'haml'
 gem 'rdiscount'
 gem 'rack-ssl-enforcer'
 gem 'pwqgen.rb', "~>0.0.2.pre.1"
+gem 'sys-uname'
 
 group :development do
 	gem 'foreman'

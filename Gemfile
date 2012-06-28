@@ -7,6 +7,7 @@ gem 'sinatra', :github => "sinatra"
 gem 'haml'
 gem 'rdiscount'
 gem 'rack-ssl-enforcer'
+gem 'pwqgen.rb', "~>0.0.2.pre.1"
 
 group :development do
 	gem 'foreman'

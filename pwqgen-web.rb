@@ -5,6 +5,7 @@ Bundler.setup(:default, ENV['RACK_ENV'])
 require 'sinatra'
 require 'haml'
 require 'rack/ssl-enforcer'
+require 'pwqgen'
 
 configure :production do
 	require 'newrelic_rpm'
@@ -22,5 +23,9 @@ get '/' do
 end
 
 def gen_pass
-	`./pwqgen.static`
+	begin
+		`./pwqgen.static`
+	rescue Errno::ENOEXEC
+		Pwqgen.generate
+	end
 end

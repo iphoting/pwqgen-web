@@ -11,3 +11,8 @@ gem 'rack-ssl-enforcer'
 group :development do
 	gem 'foreman'
 end
+
+group :production do
+	gem 'newrelic_rpm'
+end
+

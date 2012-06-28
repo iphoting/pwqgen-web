@@ -6,7 +6,10 @@ require 'sinatra'
 require 'haml'
 require 'rack/ssl-enforcer'
 
-use Rack::SslEnforcer if ENV['RACK_ENV'] == 'production'
+configure :production do
+	require 'newrelic_rpm'
+	use Rack::SslEnforcer
+end
 
 get %r{/te?xt} do
 	content_type 'text/plain'

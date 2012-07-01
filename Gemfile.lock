@@ -11,15 +11,13 @@ GEM
   remote: http://rubygems.org/
   specs:
     daemons (1.1.8)
-    docopt (0.0.4)
     eventmachine (0.12.10)
     ffi (1.0.11)
     foreman (0.47.0)
       thor (>= 0.13.6)
     haml (3.1.6)
     newrelic_rpm (3.4.0.1)
-    pwqgen.rb (0.0.2.pre.1)
-      docopt (~> 0.0.4)
+    pwqgen.rb (0.0.3.pre.1)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
@@ -41,7 +39,7 @@ DEPENDENCIES
   foreman
   haml
   newrelic_rpm
-  pwqgen.rb (~> 0.0.2.pre.1)
+  pwqgen.rb (~> 0.0.3.pre.1)
   rack
   rack-ssl-enforcer
   rdiscount

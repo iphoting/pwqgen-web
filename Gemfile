@@ -7,7 +7,7 @@ gem 'sinatra', :github => "sinatra"
 gem 'haml'
 gem 'rdiscount'
 gem 'rack-ssl-enforcer'
-gem 'pwqgen.rb', "~> 0.0.3.pre.1"
+gem 'pwqgen.rb', "~> 0.0.3"
 gem 'sys-uname'
 
 group :development do

@@ -10,7 +10,7 @@ require 'pwqgen'
 
 configure :production do
 	require 'newrelic_rpm'
-	use Rack::SslEnforcer
+	use Rack::SslEnforcer, :hsts => true
 end
 
 get %r{/te?xt} do

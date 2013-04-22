@@ -12,6 +12,13 @@ gem 'sys-uname'
 
 group :development do
 	gem 'foreman'
+	gem 'guard'
+	gem 'guard-pow'
+	gem 'guard-bundler'
+	gem 'terminal-notifier-guard'
+	gem 'rb-inotify', :require => false
+	gem 'rb-fsevent', :require => false
+	gem 'rb-fchange', :require => false
 end
 
 group :production do

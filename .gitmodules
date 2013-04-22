@@ -1,0 +1,3 @@
+[submodule "vendor/lib/ZeroClipboard"]
+	path = vendor/lib/ZeroClipboard
+	url = git://github.com/jonrohan/ZeroClipboard.git

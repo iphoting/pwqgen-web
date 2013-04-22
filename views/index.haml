@@ -1,4 +1,7 @@
 %p Your generated password:
 %p
   %pre= @password
+  %button{:id => 'copy-button', 'data-clipboard-text' => @password, :title => 'Click to Copy'} Copy to Clipboard
 %p This page should be viewed over TLS/SSL. You can access a text/plain version at <a href="/txt">/txt</a>.
+%script{:src => 'ZeroClipboard.min.js'}
+%script{:src => 'main.js'}

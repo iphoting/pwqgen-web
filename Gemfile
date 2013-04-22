@@ -1,9 +1,9 @@
-source :rubygems
+source 'https://rubygems.org/'
 ruby "2.0.0"
 
 gem 'thin'
 gem 'rack'
-gem 'sinatra', :github => "sinatra"
+gem 'sinatra', "~> 1.4.0"
 gem 'haml'
 gem 'rdiscount'
 gem 'rack-ssl-enforcer'

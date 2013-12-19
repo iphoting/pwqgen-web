@@ -1,7 +1,6 @@
 source 'https://rubygems.org/'
 ruby "2.0.0"
 
-gem 'thin'
 gem 'rack'
 gem 'sinatra', "~> 1.4.0"
 gem 'haml'
@@ -20,6 +19,7 @@ group :development do
 	gem 'rb-fsevent', :require => false
 	gem 'rb-fchange', :require => false
 end
+gem 'rainbows'
 
 group :production do
 	gem 'newrelic_rpm'

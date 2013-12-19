@@ -6,19 +6,11 @@ gem 'sinatra', "~> 1.4.0"
 gem 'haml'
 gem 'rdiscount'
 gem 'rack-ssl-enforcer'
+gem 'rack-timeout'
+
 gem 'pwqgen.rb', "~> 0.0.4"
 gem 'sys-uname'
 
-group :development do
-	gem 'foreman'
-	gem 'guard'
-	gem 'guard-pow'
-	gem 'guard-bundler'
-	gem 'terminal-notifier-guard'
-	gem 'rb-inotify', :require => false
-	gem 'rb-fsevent', :require => false
-	gem 'rb-fchange', :require => false
-end
 gem 'rainbows'
 
 group :production do

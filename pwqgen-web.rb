@@ -1,16 +1,24 @@
 require 'rubygems'
-require 'bundler/setup'
+require 'bundler'
 
 require 'sinatra'
 require 'haml'
-require 'rack/ssl-enforcer'
+require 'rack-timeout'
 require 'sys/uname'
 require 'pwqgen'
 
 configure :production do
 	require 'newrelic_rpm'
+	require 'rack/ssl-enforcer'
 	use Rack::SslEnforcer, :hsts => true
 end
+
+use Rack::Timeout
+Rack::Timeout.timeout = 10
+use Rack::ConditionalGet
+use Rack::ETag
+use Rack::ContentLength
+use Rack::Deflater
 
 get %r{/te?xt} do
 	content_type 'text/plain'

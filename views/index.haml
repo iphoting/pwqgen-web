@@ -1,6 +1,16 @@
+<script>
+$(function() {
+if(!swfobject.hasFlashPlayerVersion("1")) {
+$("#copy-button").hide();
+$('#password').attr('readonly', false).attr('autofocus', false);
+} else {
+$('#password').focus(function() { $(this).select(); }).mouseup(function(e){ e.preventDefault();}); 
+}
+});
+</script>
 %p Your generated password:
 %p
-  %pre= @password
+  %input{ :type => 'text', :autocomplete => 'off', :autofocus => true, :readonly => true, :id => 'password', :value => @password }
   %button{:id => 'copy-button', 'data-clipboard-text' => @password, :title => 'Click to Copy'} Copy to Clipboard
 %p This page should be viewed over TLS/SSL. You can access a text/plain version at <a href="/txt">/txt</a>.
 %script{:src => 'ZeroClipboard.min.js'}

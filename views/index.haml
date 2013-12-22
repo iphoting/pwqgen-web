@@ -1,13 +1,3 @@
-<script>
-$(function() {
-if(!swfobject.hasFlashPlayerVersion("1")) {
-$("#copy-button").hide();
-$('#password').attr('readonly', false).attr('autofocus', false);
-} else {
-$('#password').focus(function() { $(this).select(); }).mouseup(function(e){ e.preventDefault();}); 
-}
-});
-</script>
 %form{ :role => 'form' }
   .form-group
     %label.control-label{ :for => 'password' } Generated Password
@@ -15,3 +5,12 @@ $('#password').focus(function() { $(this).select(); }).mouseup(function(e){ e.pr
   %button.btn.btn-default{:id => 'copy-button', 'data-clipboard-text' => @password, :title => 'Click to Copy'} Copy to Clipboard
 %script{:src => 'ZeroClipboard.min.js'}
 %script{:src => 'main.js'}
+:javascript
+  $(function() {
+    if(!swfobject.hasFlashPlayerVersion("1")) {
+      $("#copy-button").hide();
+      $('#password').attr('readonly', false).attr('autofocus', false);
+    } else {
+      $('#password').focus(function() { $(this).select(); }).mouseup(function(e){ e.preventDefault();}); 
+    }
+  });

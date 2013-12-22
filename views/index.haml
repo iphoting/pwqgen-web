@@ -8,10 +8,10 @@ $('#password').focus(function() { $(this).select(); }).mouseup(function(e){ e.pr
 }
 });
 </script>
-%p Your generated password:
-%p
-  %input{ :type => 'text', :autocomplete => 'off', :autofocus => true, :readonly => true, :id => 'password', :value => @password }
-  %button{:id => 'copy-button', 'data-clipboard-text' => @password, :title => 'Click to Copy'} Copy to Clipboard
-%p This page should be viewed over TLS/SSL. You can access a text/plain version at <a href="/txt">/txt</a>.
+%form{ :role => 'form' }
+  .form-group
+    %label.control-label{ :for => 'password' } Generated Password
+    %input.form-control.input-lg{ :type => 'text', :name => 'password', :autocomplete => 'off', :autofocus => true, :readonly => true, :id => 'password', :value => @password }
+  %button.btn.btn-default{:id => 'copy-button', 'data-clipboard-text' => @password, :title => 'Click to Copy'} Copy to Clipboard
 %script{:src => 'ZeroClipboard.min.js'}
 %script{:src => 'main.js'}

@@ -1,1 +1,1 @@
-rvm use --create 2.0.0@pwqgen
+rvm use --create 2.1.0@pwqgen

@@ -1,8 +1,12 @@
 require 'rubygems'
-require 'bundler'
+require 'bundler/setup'
 
-require 'sinatra'
+require 'rack'
+
+require 'rdiscount'
 require 'haml'
+require 'sinatra'
+
 require 'rack-timeout'
 require 'sys/uname'
 require 'pwqgen'

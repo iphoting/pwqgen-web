@@ -6,7 +6,7 @@ GEM
     haml (4.0.5)
       tilt
     kgio (2.9.2)
-    newrelic_rpm (3.7.2.195)
+    newrelic_rpm (3.7.3.204)
     pwqgen.rb (0.0.5)
       docopt (~> 0.5.0)
     rack (1.5.2)

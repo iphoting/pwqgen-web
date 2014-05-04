@@ -6,6 +6,7 @@ require 'rack'
 require 'rdiscount'
 require 'haml'
 require 'sinatra'
+require 'sinatra/namespace'
 
 require 'rack-timeout'
 require 'sys/uname'
@@ -24,7 +25,21 @@ use Rack::ETag
 use Rack::ContentLength
 use Rack::Deflater
 
-get %r{/te?xt} do
+namespace %r{\/m(?:ulti)?} do
+	get %r{\/te?xt(?:\/([\d]+))?} do |d|
+		content_type 'text/plain'
+		count = (d.nil?)? 30 : d.to_i
+		gen_n_pass(count)
+	end
+
+	get %r{(\/[\d]+)?} do |d|
+		@count = (d.nil?)? 30 : d.to_i
+		@passwords = gen_n_pass(@count)
+		haml :multi
+	end
+end
+
+get %r{\/te?xt} do
 	content_type 'text/plain'
 	gen_pass
 end
@@ -32,6 +47,12 @@ end
 get '/' do
 	@password = gen_pass
 	haml :index
+end
+
+def gen_n_pass(count = 30)
+	count.times.collect do |i|
+		gen_pass
+	end.join($/) # join with newlines.
 end
 
 def gen_pass

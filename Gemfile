@@ -3,6 +3,7 @@ ruby "2.1.1"
 
 gem 'rack'
 gem 'sinatra', "~> 1.4.0"
+gem 'sinatra-contrib'
 gem 'haml'
 gem 'rdiscount'
 gem 'rack-ssl-enforcer'

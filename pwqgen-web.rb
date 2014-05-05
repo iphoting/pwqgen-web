@@ -57,7 +57,7 @@ end
 
 def gen_pass
 	if Sys::Uname.sysname.to_s.downcase.include? "linux" then
-		`./pwqgen.static`
+		`./pwqgen.static`.chomp
 	else
 		Pwqgen.generate
 	end

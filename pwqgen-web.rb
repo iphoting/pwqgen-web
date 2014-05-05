@@ -32,7 +32,7 @@ namespace %r{\/m(?:ulti)?} do
 		gen_n_pass(count)
 	end
 
-	get %r{(\/[\d]+)?} do |d|
+	get %r{(?:\/([\d]+))?} do |d|
 		@count = (d.nil?)? 30 : d.to_i
 		@passwords = gen_n_pass(@count)
 		haml :multi

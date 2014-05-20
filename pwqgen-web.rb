@@ -25,14 +25,14 @@ use Rack::ETag
 use Rack::ContentLength
 use Rack::Deflater
 
-namespace %r{\/m(?:ulti)?} do
-	get %r{\/te?xt(?:\/([\d]+))?} do |d|
+namespace %r{\/m(?:ulti)?\/?} do
+	get %r{\/te?xt(?:\/([\d]+))?\/?} do |d|
 		content_type 'text/plain'
 		count = (d.nil?)? 30 : d.to_i
 		gen_n_pass(count)
 	end
 
-	get %r{(?:\/([\d]+))?} do |d|
+	get %r{(?:\/([\d]+)\/?)?} do |d|
 		@count = (d.nil?)? 30 : d.to_i
 		@passwords = gen_n_pass(@count)
 		haml :multi

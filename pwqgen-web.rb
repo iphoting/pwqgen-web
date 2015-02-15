@@ -39,6 +39,26 @@ namespace %r{\/m(?:ulti)?\/?} do
 	end
 end
 
+namespace '/pin' do
+	get '/txt/?:num?' do
+		n = (params[:num].to_i <= 0 || params[:num].to_i > 2048)? 6 : params[:num].to_i
+		content_type 'text/plain'
+		gen_pin(n)
+	end
+
+	get '/:num/txt' do
+		n = (params[:num].to_i <= 0 || params[:num].to_i > 2048)? 6 : params[:num].to_i
+		content_type 'text/plain'
+		gen_pin(n)
+	end
+
+	get '/?:num?' do
+		n = (params[:num].to_i <= 0 || params[:num].to_i > 2048)? 6 : params[:num].to_i
+		@password = gen_pin(n)
+		haml :index
+	end
+end
+
 get %r{\/te?xt} do
 	content_type 'text/plain'
 	gen_pass
@@ -47,6 +67,15 @@ end
 get '/' do
 	@password = gen_pass
 	haml :index
+end
+
+def gen_pin(n = 6)
+	require 'securerandom'
+	output = ""
+	for i in 1..n do
+		output += SecureRandom.random_number(10).to_s
+	end
+	return output
 end
 
 def gen_n_pass(count = 30)

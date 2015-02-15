@@ -59,6 +59,26 @@ namespace '/pin' do
 	end
 end
 
+namespace '/hex' do
+	get '/txt/?:num?' do
+		n = (params[:num].to_i <= 0 || params[:num].to_i > 4096)? 256 : params[:num].to_i
+		content_type 'text/plain'
+		gen_hex(n)
+	end
+
+	get '/:num/txt' do
+		n = (params[:num].to_i <= 0 || params[:num].to_i > 4096)? 256 : params[:num].to_i
+		content_type 'text/plain'
+		gen_hex(n)
+	end
+
+	get '/?:num?' do
+		n = (params[:num].to_i <= 0 || params[:num].to_i > 4096)? 256 : params[:num].to_i
+		@password = gen_hex(n)
+		haml :index
+	end
+end
+
 get %r{\/te?xt} do
 	content_type 'text/plain'
 	gen_pass
@@ -76,6 +96,11 @@ def gen_pin(n = 6)
 		output += SecureRandom.random_number(10).to_s
 	end
 	return output
+end
+
+def gen_hex(n = 256)
+	require 'securerandom'
+	SecureRandom.hex(n / 8)
 end
 
 def gen_n_pass(count = 30)

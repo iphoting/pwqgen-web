@@ -3,6 +3,7 @@
     %label.control-label{ :for => 'password' } Generated Password
     %input.form-control.input-lg{ :type => 'text', :name => 'password', :autocomplete => 'off', :autofocus => true, :readonly => true, :id => 'password', :value => @password }
   %button.btn.btn-default{:id => 'copy-button', 'data-clipboard-text' => @password, :title => 'Click to Copy'} Copy to Clipboard
+  %a.btn.btn-default{:id => 'reload', :title => 'Reload', :href => request.path_info} Reload
 %script{:src => '/ZeroClipboard.min.js'}
 %script{:src => '/main.js'}
 :javascript

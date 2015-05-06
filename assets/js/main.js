@@ -1,3 +1,3 @@
-var clip = new ZeroClipboard( document.getElementById("copy-button"), {
-	moviePath: "/assets/ZeroClipboard.swf"
-} );
+ZeroClipboard.config({ swfPath: "/assets/ZeroClipboard.swf" });
+
+var clip = new ZeroClipboard( $("button#copy-button") );

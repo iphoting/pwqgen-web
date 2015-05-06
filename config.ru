@@ -4,8 +4,8 @@
 map '/assets' do
 	require 'sprockets'
 	environment = Sprockets::Environment.new
+	environment.append_path 'vendor/lib/ZeroClipboard/dist'
 	environment.append_path 'assets/js'
-	environment.append_path 'assets/swf'
 	run environment
 end
 

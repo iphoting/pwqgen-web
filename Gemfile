@@ -1,5 +1,5 @@
 source 'https://rubygems.org/'
-ruby "2.2.1"
+ruby "2.2.2"
 
 gem 'rack'
 gem 'sinatra', "~> 1.4.0"
@@ -8,6 +8,7 @@ gem 'haml'
 gem 'rdiscount'
 gem 'rack-ssl-enforcer'
 gem 'rack-timeout'
+gem 'sprockets', "~> 3.0"
 
 gem 'pwqgen.rb', "~> 0.0.4"
 gem 'sys-uname'

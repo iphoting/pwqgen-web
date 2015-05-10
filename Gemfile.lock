@@ -8,10 +8,10 @@ GEM
       tilt
     kgio (2.9.3)
     multi_json (1.11.0)
-    newrelic_rpm (3.11.2.286)
+    newrelic_rpm (3.12.0.288)
     pwqgen.rb (0.0.5)
       docopt (~> 0.5.0)
-    rack (1.6.0)
+    rack (1.6.1)
     rack-protection (1.5.3)
       rack
     rack-ssl-enforcer (0.2.8)

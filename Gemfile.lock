@@ -8,7 +8,7 @@ GEM
       tilt
     kgio (2.10.0)
     multi_json (1.11.2)
-    newrelic_rpm (3.13.2.302)
+    newrelic_rpm (3.14.0.305)
     pwqgen.rb (0.0.5)
       docopt (~> 0.5.0)
     rack (1.6.4)
@@ -18,7 +18,7 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     rack-timeout (0.3.2)
-    rainbows (4.6.2)
+    rainbows (4.7.0)
       kgio (~> 2.5)
       rack (~> 1.1)
       unicorn (~> 4.8)

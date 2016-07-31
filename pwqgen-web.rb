@@ -18,8 +18,7 @@ configure :production do
 	use Rack::SslEnforcer, :hsts => true
 end
 
-use Rack::Timeout
-Rack::Timeout.timeout = 10
+use Rack::Timeout, service_timeout: 10
 use Rack::ConditionalGet
 use Rack::ETag
 use Rack::ContentLength

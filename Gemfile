@@ -13,7 +13,7 @@ gem 'sprockets', "~> 3.0"
 gem 'pwqgen.rb', "~> 0.0.4"
 gem 'sys-uname'
 
-gem 'rainbows'
+gem 'yahns'
 
 group :production do
 	gem 'newrelic_rpm'

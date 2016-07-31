@@ -1,1 +1,1 @@
-web: bundle exec rainbows -p $PORT -c ./config/rainbows.rb
+web: bundle exec yahns-rackup -E ${RACK_ENV:-development} -p ${PORT:-9290}

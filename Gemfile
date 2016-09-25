@@ -9,6 +9,7 @@ gem 'rdiscount'
 gem 'rack-ssl-enforcer'
 gem 'rack-timeout'
 gem 'sprockets', "~> 3.0"
+gem 'uglifier'
 
 gem 'pwqgen.rb', "~> 0.0.4"
 gem 'sys-uname'

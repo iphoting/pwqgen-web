@@ -4,6 +4,7 @@ GEM
     backports (3.6.8)
     concurrent-ruby (1.0.2)
     docopt (0.5.0)
+    execjs (2.7.0)
     ffi (1.9.14)
     haml (4.0.7)
       tilt
@@ -41,6 +42,8 @@ GEM
       ffi (>= 1.0.0)
     sysrandom (1.0.2)
     tilt (2.0.5)
+    uglifier (3.0.2)
+      execjs (>= 0.3.0, < 3)
     unicorn (5.1.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
@@ -64,6 +67,7 @@ DEPENDENCIES
   sinatra-contrib
   sprockets (~> 3.0)
   sys-uname
+  uglifier
   yahns
 
 RUBY VERSION

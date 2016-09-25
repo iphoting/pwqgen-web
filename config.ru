@@ -4,6 +4,8 @@
 map '/assets' do
 	require 'sprockets'
 	environment = Sprockets::Environment.new
+	environment.append_path '_assets/js'
+	environment.js_compressor = :uglify
 	run environment
 end
 

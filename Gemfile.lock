@@ -10,8 +10,8 @@ GEM
       tilt
     kgio (2.11.0)
     multi_json (1.12.1)
-    newrelic_rpm (3.17.2.327)
-    pwqgen.rb (0.0.6)
+    newrelic_rpm (3.18.0.329)
+    pwqgen.rb (0.1.0)
       docopt (~> 0.5)
       sysrandom
     rack (1.6.5)
@@ -41,7 +41,7 @@ GEM
     sys-uname (1.0.3)
       ffi (>= 1.0.0)
     sysrandom (1.0.4)
-    tilt (2.0.5)
+    tilt (2.0.6)
     uglifier (3.0.4)
       execjs (>= 0.3.0, < 3)
     unicorn (5.2.0)
@@ -58,7 +58,7 @@ PLATFORMS
 DEPENDENCIES
   haml
   newrelic_rpm
-  pwqgen.rb (~> 0.0.4)
+  pwqgen.rb (~> 0.1)
   rack
   rack-ssl-enforcer
   rack-timeout

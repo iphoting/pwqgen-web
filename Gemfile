@@ -11,7 +11,7 @@ gem 'rack-timeout'
 gem 'sprockets', "~> 3.0"
 gem 'uglifier'
 
-gem 'pwqgen.rb', "~> 0.0.4"
+gem 'pwqgen.rb', "~> 0.1"
 gem 'sys-uname'
 
 gem 'yahns'

@@ -1,5 +1,6 @@
 source 'https://rubygems.org/'
-ruby "2.3.1"
+ruby "2.3.3"
+#ruby-gemset=pwqgen
 
 gem 'rack'
 gem 'sinatra', "~> 1.4.0"

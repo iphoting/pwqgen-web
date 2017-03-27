@@ -42,7 +42,7 @@ GEM
       ffi (>= 1.0.0)
     sysrandom (1.0.5)
     tilt (2.0.7)
-    uglifier (3.1.9)
+    uglifier (3.1.10)
       execjs (>= 0.3.0, < 3)
     unicorn (5.2.0)
       kgio (~> 2.6)
@@ -71,7 +71,7 @@ DEPENDENCIES
   yahns
 
 RUBY VERSION
-   ruby 2.3.3p222
+   ruby 2.4.1p111
 
 BUNDLED WITH
    1.14.6

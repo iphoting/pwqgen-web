@@ -1,38 +1,39 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    backports (3.6.8)
+    backports (3.8.0)
     concurrent-ruby (1.0.5)
-    docopt (0.5.0)
+    docopt (0.6.0)
     execjs (2.7.0)
     ffi (1.9.18)
-    haml (4.0.7)
+    haml (5.0.1)
+      temple (>= 0.8.0)
       tilt
     kgio (2.11.0)
     multi_json (1.12.1)
-    newrelic_rpm (4.0.0.332)
+    mustermann (1.0.0)
+    newrelic_rpm (4.1.0.333)
     pwqgen.rb (0.1.0)
       docopt (~> 0.5)
       sysrandom
-    rack (1.6.5)
-    rack-protection (1.5.3)
+    rack (2.0.2)
+    rack-protection (2.0.0)
       rack
     rack-ssl-enforcer (0.2.9)
-    rack-test (0.6.3)
-      rack (>= 1.0)
     rack-timeout (0.4.2)
     raindrops (0.18.0)
     rdiscount (2.2.0.1)
-    sinatra (1.4.8)
-      rack (~> 1.5)
-      rack-protection (~> 1.4)
-      tilt (>= 1.3, < 3)
-    sinatra-contrib (1.4.7)
+    sinatra (2.0.0)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.0)
+      tilt (~> 2.0)
+    sinatra-contrib (2.0.0)
       backports (>= 2.0)
       multi_json
-      rack-protection
-      rack-test
-      sinatra (~> 1.4.0)
+      mustermann (~> 1.0)
+      rack-protection (= 2.0.0)
+      sinatra (= 2.0.0)
       tilt (>= 1.3, < 3)
     sleepy_penguin (3.5.0)
     sprockets (3.7.1)
@@ -41,10 +42,11 @@ GEM
     sys-uname (1.0.3)
       ffi (>= 1.0.0)
     sysrandom (1.0.5)
+    temple (0.8.0)
     tilt (2.0.7)
-    uglifier (3.1.10)
+    uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
-    unicorn (5.2.0)
+    unicorn (5.3.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
     yahns (1.15.0)
@@ -63,9 +65,9 @@ DEPENDENCIES
   rack-ssl-enforcer
   rack-timeout
   rdiscount
-  sinatra (~> 1.4.0)
+  sinatra (~> 2.0)
   sinatra-contrib
-  sprockets (~> 3.0)
+  sprockets
   sys-uname
   uglifier
   yahns

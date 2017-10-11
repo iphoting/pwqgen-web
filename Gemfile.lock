@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    backports (3.8.0)
+    backports (3.10.0)
     concurrent-ruby (1.0.5)
     docopt (0.6.0)
     execjs (2.7.0)
@@ -12,7 +12,7 @@ GEM
     kgio (2.11.0)
     multi_json (1.12.2)
     mustermann (1.0.1)
-    newrelic_rpm (4.4.0.336)
+    newrelic_rpm (4.5.0.337)
     pwqgen.rb (0.1.0)
       docopt (~> 0.5)
       sysrandom
@@ -46,7 +46,7 @@ GEM
     tilt (2.0.8)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
-    unicorn (5.3.0)
+    unicorn (5.3.1)
       kgio (~> 2.6)
       raindrops (~> 0.7)
     yahns (1.15.0)

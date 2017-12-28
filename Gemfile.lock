@@ -1,18 +1,18 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    backports (3.10.0)
+    backports (3.11.0)
     concurrent-ruby (1.0.5)
     docopt (0.6.0)
     execjs (2.7.0)
     ffi (1.9.18)
-    haml (5.0.3)
+    haml (5.0.4)
       temple (>= 0.8.0)
       tilt
-    kgio (2.11.0)
+    kgio (2.11.1)
     multi_json (1.12.2)
     mustermann (1.0.1)
-    newrelic_rpm (4.5.0.337)
+    newrelic_rpm (4.7.1.340)
     pwqgen.rb (0.1.0)
       docopt (~> 0.5)
       sysrandom
@@ -44,9 +44,9 @@ GEM
     sysrandom (1.0.5)
     temple (0.8.0)
     tilt (2.0.8)
-    uglifier (3.2.0)
+    uglifier (4.0.2)
       execjs (>= 0.3.0, < 3)
-    unicorn (5.3.1)
+    unicorn (5.4.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
     yahns (1.15.0)
@@ -73,7 +73,7 @@ DEPENDENCIES
   yahns
 
 RUBY VERSION
-   ruby 2.4.2p198
+   ruby 2.4.3p205
 
 BUNDLED WITH
-   1.14.6
+   1.16.1

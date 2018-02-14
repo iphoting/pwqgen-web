@@ -1,22 +1,22 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    backports (3.11.0)
+    backports (3.11.1)
     concurrent-ruby (1.0.5)
-    docopt (0.6.0)
+    docopt (0.6.1)
     execjs (2.7.0)
-    ffi (1.9.18)
+    ffi (1.9.21)
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
-    kgio (2.11.1)
-    multi_json (1.12.2)
+    kgio (2.11.2)
+    multi_json (1.13.1)
     mustermann (1.0.1)
-    newrelic_rpm (4.7.1.340)
+    newrelic_rpm (4.8.0.341)
     pwqgen.rb (0.1.0)
       docopt (~> 0.5)
       sysrandom
-    rack (2.0.3)
+    rack (2.0.4)
     rack-protection (2.0.0)
       rack
     rack-ssl-enforcer (0.2.9)
@@ -44,7 +44,7 @@ GEM
     sysrandom (1.0.5)
     temple (0.8.0)
     tilt (2.0.8)
-    uglifier (4.0.2)
+    uglifier (4.1.6)
       execjs (>= 0.3.0, < 3)
     unicorn (5.4.0)
       kgio (~> 2.6)

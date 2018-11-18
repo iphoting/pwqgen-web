@@ -1,1 +1,1 @@
-web: bundle exec yahns-rackup -E ${RACK_ENV:-development} -p ${PORT:-9290}
+web: bundle exec iodine -p ${PORT:-9290}

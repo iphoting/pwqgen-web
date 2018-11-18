@@ -1,5 +1,5 @@
 source 'https://rubygems.org/'
-ruby "2.4.5"
+ruby File.read('.ruby-version', mode: 'rb').chomp
 #ruby-gemset=pwqgen
 
 gem 'rack'
@@ -15,9 +15,8 @@ gem 'uglifier'
 gem 'pwqgen.rb', "~> 0.1"
 gem 'sys-uname'
 
-gem 'yahns'
-
 group :production do
 	gem 'newrelic_rpm'
+	gem 'iodine', '~> 0.6'
 end
 

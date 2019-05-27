@@ -16,8 +16,7 @@ GEM
       tilt
     i18n (1.1.1)
       concurrent-ruby (~> 1.0)
-    iodine (0.7.9)
-      rack (>= 1.0, < 3.0)
+    iodine (0.7.31)
     minitest (5.11.3)
     multi_json (1.13.1)
     mustermann (1.0.3)
@@ -63,7 +62,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
-  iodine (~> 0.6)
+  iodine (~> 0.7)
   newrelic_rpm
   pwqgen.rb (~> 0.1)
   rack

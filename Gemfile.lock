@@ -21,7 +21,7 @@ GEM
     minitest (5.11.3)
     multi_json (1.13.1)
     mustermann (1.0.3)
-    newrelic_rpm (5.5.0.348)
+    newrelic_rpm (6.3.0.355)
     pwqgen.rb (0.1.0)
       docopt (~> 0.5)
       sysrandom

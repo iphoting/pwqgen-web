@@ -9,7 +9,7 @@ GEM
     haml (5.1.1)
       temple (>= 0.8.0)
       tilt
-    iodine (0.7.31)
+    iodine (0.7.33)
     multi_json (1.13.1)
     mustermann (1.0.3)
     newrelic_rpm (6.3.0.355)
@@ -50,7 +50,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
-  iodine (~> 0.6)
+  iodine (~> 0.7)
   newrelic_rpm
   pwqgen.rb (~> 0.1)
   rack

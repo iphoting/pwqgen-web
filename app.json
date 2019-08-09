@@ -1,0 +1,35 @@
+{
+  "addons": [
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ],
+  "env": {
+    "APP_ENV": {
+      "required": true
+    },
+    "GEM_PATH": {
+      "required": true
+    },
+    "LANG": {
+      "required": true
+    },
+    "PATH": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "pwqgen-web",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}

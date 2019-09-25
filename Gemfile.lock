@@ -42,7 +42,7 @@ GEM
     sysrandom (1.0.5)
     temple (0.8.1)
     tilt (2.0.9)
-    uglifier (4.1.20)
+    uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
 
 PLATFORMS

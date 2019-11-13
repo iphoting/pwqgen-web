@@ -9,7 +9,7 @@ GEM
     haml (5.1.2)
       temple (>= 0.8.0)
       tilt
-    iodine (0.7.36)
+    iodine (0.7.37)
     multi_json (1.13.1)
     mustermann (1.0.3)
     newrelic_rpm (6.7.0.359)

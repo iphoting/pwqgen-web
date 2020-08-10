@@ -22,7 +22,7 @@ GEM
       rack
     rack-ssl-enforcer (0.2.9)
     rack-timeout (0.6.0)
-    rdiscount (2.2.0.1)
+    rdiscount (2.2.0.2)
     ruby2_keywords (0.0.1)
     sinatra (2.0.8.1)
       mustermann (~> 1.0)

@@ -1,7 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    backports (3.18.1)
     concurrent-ruby (1.1.7)
     docopt (0.6.1)
     execjs (2.7.0)
@@ -18,23 +17,22 @@ GEM
       docopt (~> 0.5)
       sysrandom
     rack (2.2.3)
-    rack-protection (2.0.8.1)
+    rack-protection (2.1.0)
       rack
     rack-ssl-enforcer (0.2.9)
     rack-timeout (0.6.0)
     rdiscount (2.2.0.2)
     ruby2_keywords (0.0.2)
-    sinatra (2.0.8.1)
+    sinatra (2.1.0)
       mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.8.1)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
       tilt (~> 2.0)
-    sinatra-contrib (2.0.8.1)
-      backports (>= 2.8.2)
+    sinatra-contrib (2.1.0)
       multi_json
       mustermann (~> 1.0)
-      rack-protection (= 2.0.8.1)
-      sinatra (= 2.0.8.1)
+      rack-protection (= 2.1.0)
+      sinatra (= 2.1.0)
       tilt (~> 2.0)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -59,7 +57,7 @@ DEPENDENCIES
   rack-ssl-enforcer
   rack-timeout
   rdiscount
-  sinatra (~> 2.0)
+  sinatra (~> 2.1)
   sinatra-contrib
   sprockets
   sys-uname

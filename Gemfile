@@ -20,3 +20,10 @@ group :production do
 	gem 'iodine', '~> 0.7'
 end
 
+group :test do
+	gem 'cucumber'
+	gem 'capybara'
+	gem 'selenium-webdriver'
+	gem 'rspec-expectations'
+	gem 'rake'
+end

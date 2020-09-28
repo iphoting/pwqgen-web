@@ -55,7 +55,7 @@ GEM
     docopt (0.6.1)
     execjs (2.7.0)
     ffi (1.13.1)
-    haml (5.1.2)
+    haml (5.2.0)
       temple (>= 0.8.0)
       tilt
     i18n (1.8.5)

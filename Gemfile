@@ -22,7 +22,7 @@ end
 
 group :test do
 	gem 'cucumber'
-	gem 'capybara'
+	gem 'capybara', '>= 3.34.0'
 	gem 'selenium-webdriver'
 	gem 'rspec-expectations'
 	gem 'rake'

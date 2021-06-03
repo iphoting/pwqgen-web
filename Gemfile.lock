@@ -73,7 +73,7 @@ GEM
     multi_test (0.1.2)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
-    newrelic_rpm (7.0.0)
+    newrelic_rpm (7.1.0)
     nokogiri (1.11.4)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)

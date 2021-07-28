@@ -49,7 +49,7 @@ GEM
     docopt (0.6.1)
     execjs (2.7.0)
     ffi (1.15.3)
-    haml (5.2.1)
+    haml (5.2.2)
       temple (>= 0.8.0)
       tilt
     iodine (0.7.44)

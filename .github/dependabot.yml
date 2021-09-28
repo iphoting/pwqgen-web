@@ -11,7 +11,3 @@ updates:
   - iphoting
   assignees:
   - iphoting
-  ignore:
-  - dependency-name: capybara
-    versions:
-    - 3.35.2

@@ -88,7 +88,7 @@ GEM
     rspec-support (3.10.2)
     ruby2_keywords (0.0.4)
     rubyzip (2.3.2)
-    selenium-webdriver (4.0.0)
+    selenium-webdriver (4.0.2)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)

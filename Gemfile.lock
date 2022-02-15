@@ -74,7 +74,7 @@ GEM
       sysrandom
     racc (1.6.0)
     rack (2.2.3)
-    rack-protection (2.1.0)
+    rack-protection (2.2.0)
       rack
     rack-ssl-enforcer (0.2.9)
     rack-test (1.1.0)
@@ -88,22 +88,22 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.11.0)
     rspec-support (3.11.0)
-    ruby2_keywords (0.0.4)
+    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
-    sinatra (2.1.0)
+    sinatra (2.2.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
-      rack-protection (= 2.1.0)
+      rack-protection (= 2.2.0)
       tilt (~> 2.0)
-    sinatra-contrib (2.1.0)
+    sinatra-contrib (2.2.0)
       multi_json
       mustermann (~> 1.0)
-      rack-protection (= 2.1.0)
-      sinatra (= 2.1.0)
+      rack-protection (= 2.2.0)
+      sinatra (= 2.2.0)
       tilt (~> 2.0)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -135,7 +135,7 @@ DEPENDENCIES
   rdiscount
   rspec-expectations
   selenium-webdriver
-  sinatra (~> 2.1)
+  sinatra (~> 2.2)
   sinatra-contrib
   sprockets
   sys-uname

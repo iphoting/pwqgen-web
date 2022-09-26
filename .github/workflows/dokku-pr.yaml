@@ -30,9 +30,9 @@ jobs:
     steps:
       - name: Destroy the review app
         uses: dokku/github-action@v1.3.0
-          with:
-            # destroy a review app
-            command: review-apps:destroy
-            git_remote_url: 'ssh://dokku@c.iphoting.cc:3022/pwqgen'
-            ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-            review_app_name: review-appname-${{ github.event.pull_request.number }}
+        with:
+          # destroy a review app
+          command: review-apps:destroy
+          git_remote_url: 'ssh://dokku@c.iphoting.cc:3022/pwqgen'
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          review_app_name: review-appname-${{ github.event.pull_request.number }}

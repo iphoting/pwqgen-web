@@ -23,5 +23,7 @@ jobs:
       - name: Push to dokku
         uses: dokku/github-action@v1.3.0
         with:
+          # specify `--force` as a flag for git pushes
+          git_push_flags: '--force'
           git_remote_url: 'ssh://dokku@c.iphoting.cc:3022/pwqgen'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}

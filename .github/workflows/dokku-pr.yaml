@@ -19,9 +19,9 @@ jobs:
         with:
           # create a review app
           command: review-apps:create
+          review_app_name: "${{ github.event.pull_request.base.repo.name }}-review-${{ github.event.pull_request.number }}"
           git_remote_url: 'ssh://dokku@c.iphoting.cc:3022/pwqgen'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          review_app_name: review-appname-${{ github.event.pull_request.number }}
 
   destroy_review_app:
     runs-on: ubuntu-latest
@@ -33,6 +33,6 @@ jobs:
         with:
           # destroy a review app
           command: review-apps:destroy
+          review_app_name: "${{ github.event.pull_request.base.repo.name }}-review-${{ github.event.pull_request.number }}"
           git_remote_url: 'ssh://dokku@c.iphoting.cc:3022/pwqgen'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          review_app_name: review-appname-${{ github.event.pull_request.number }}

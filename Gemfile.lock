@@ -55,7 +55,7 @@ GEM
     mini_portile2 (2.8.0)
     multi_json (1.15.0)
     multi_test (1.1.0)
-    mustermann (2.0.2)
+    mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
     newrelic_rpm (8.6.0)
     nokogiri (1.13.8)
@@ -67,7 +67,7 @@ GEM
       sysrandom
     racc (1.6.0)
     rack (2.2.4)
-    rack-protection (2.2.2)
+    rack-protection (3.0.1)
       rack
     rack-ssl-enforcer (0.2.9)
     rack-test (2.0.2)
@@ -87,16 +87,16 @@ GEM
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
-    sinatra (2.2.2)
-      mustermann (~> 2.0)
-      rack (~> 2.2)
-      rack-protection (= 2.2.2)
+    sinatra (3.0.1)
+      mustermann (~> 3.0)
+      rack (~> 2.2, >= 2.2.4)
+      rack-protection (= 3.0.1)
       tilt (~> 2.0)
-    sinatra-contrib (2.2.2)
+    sinatra-contrib (3.0.1)
       multi_json
-      mustermann (~> 2.0)
-      rack-protection (= 2.2.2)
-      sinatra (= 2.2.2)
+      mustermann (~> 3.0)
+      rack-protection (= 3.0.1)
+      sinatra (= 3.0.1)
       tilt (~> 2.0)
     sprockets (4.1.1)
       concurrent-ruby (~> 1.0)
@@ -128,7 +128,7 @@ DEPENDENCIES
   rdiscount
   rspec-expectations
   selenium-webdriver
-  sinatra (~> 2.2)
+  sinatra (~> 3.0)
   sinatra-contrib
   sprockets
   sys-uname

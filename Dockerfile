@@ -12,7 +12,7 @@ WORKDIR /usr/src/app
 
 COPY Gemfile Gemfile.lock .ruby-version ./
 RUN gem install bundler
-ENV BUNDLER_WITHOUT development test
+ENV BUNDLER_WITHOUT="development test"
 RUN bundle install
 
 COPY . .

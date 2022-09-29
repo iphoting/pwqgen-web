@@ -2,7 +2,7 @@ FROM ruby:3.1.2-alpine
 
 RUN \
 	apk update && apk upgrade && \
-	apk --no-cache add build-base ruby-dev ruby-bundler && \
+	apk --no-cache add build-base nodejs npm && \
 	rm -rf /var/cache/apk/*
 
 # throw errors if Gemfile has been modified since Gemfile.lock
@@ -16,5 +16,8 @@ ENV BUNDLER_WITHOUT="development test"
 RUN bundle install
 
 COPY . .
+
+RUN \
+	apk --no-cache del build-base
 
 CMD ["rackup"]

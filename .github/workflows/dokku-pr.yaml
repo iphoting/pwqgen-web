@@ -2,13 +2,18 @@
 name: 'deploy-pr'
 
 on:
-  pull_request
+  pull_request_target:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - master
+      - dokku
+      - "dokku**"
 
 jobs:
   review_app:
     runs-on: ubuntu-latest
     # only run when a pull request is opened
-    if: github.event_name == 'pull_request' && github.event.action == 'opened'
+    if: github.event_name == 'pull_request' && (github.event.action == 'opened' || github.event.action == 'reopened' || github.event.action == 'synchronize')
     steps:
       - name: Cloning repo
         uses: actions/checkout@v2

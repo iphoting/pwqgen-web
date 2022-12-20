@@ -9,7 +9,7 @@ gem 'haml'
 gem 'rdiscount'
 gem 'rack-ssl-enforcer'
 gem 'rack-timeout'
-gem 'sprockets'
+gem 'sprockets', '>= 4.2.0'
 gem 'uglifier'
 
 gem 'pwqgen.rb', "~> 0.1"

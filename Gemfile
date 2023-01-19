@@ -2,8 +2,8 @@ source 'https://rubygems.org/'
 ruby File.read('.ruby-version', mode: 'rb').chomp
 #ruby-gemset=pwqgen
 
-gem 'rack'
-gem 'sinatra', "~> 3.0"
+gem 'rack', '>= 2.2.6.2'
+gem 'sinatra', '~> 3.0', '>= 3.0.4'
 gem 'sinatra-contrib'
 gem 'haml'
 gem 'rdiscount'

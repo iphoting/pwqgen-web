@@ -45,7 +45,7 @@ GEM
     haml (5.2.2)
       temple (>= 0.8.0)
       tilt
-    iodine (0.7.51)
+    iodine (0.7.54)
     matrix (0.4.2)
     mime-types (3.4.1)
       mime-types-data (~> 3.2015)

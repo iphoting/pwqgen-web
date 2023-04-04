@@ -2,14 +2,14 @@ source 'https://rubygems.org/'
 ruby File.read('.ruby-version', mode: 'rb').chomp
 #ruby-gemset=pwqgen
 
-gem 'rack'
-gem 'sinatra', "~> 3.0"
+gem 'rack', '>= 3.0.0'
+gem 'sinatra', '~> 3.0', '>= 3.0.5'
 gem 'sinatra-contrib'
 gem 'haml'
 gem 'rdiscount'
 gem 'rack-ssl-enforcer'
 gem 'rack-timeout'
-gem 'sprockets'
+gem 'sprockets', '>= 4.2.0'
 gem 'uglifier'
 
 gem 'pwqgen.rb', "~> 0.1"

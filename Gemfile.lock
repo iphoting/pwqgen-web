@@ -112,7 +112,11 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+  aarch64-linux
+  arm64-darwin
   ruby
+  x86_64-darwin
+  x86_64-linux
 
 DEPENDENCIES
   capybara
@@ -138,4 +142,4 @@ RUBY VERSION
    ruby 3.1.2p20
 
 BUNDLED WITH
-   2.2.14
+   2.4.18

@@ -65,7 +65,7 @@ GEM
       docopt (~> 0.5)
       sysrandom
     racc (1.6.1)
-    rack (2.2.6.3)
+    rack (2.2.8)
     rack-protection (3.1.0)
       rack (~> 2.2, >= 2.2.4)
     rack-ssl-enforcer (0.2.9)

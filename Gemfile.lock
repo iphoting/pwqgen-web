@@ -1,10 +1,10 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.1)
+    addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
     builder (3.2.4)
-    capybara (3.38.0)
+    capybara (3.39.2)
       addressable
       matrix
       mini_mime (>= 0.1.3)
@@ -13,7 +13,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
-    concurrent-ruby (1.1.10)
+    concurrent-ruby (1.2.2)
     cucumber (8.0.0)
       builder (~> 3.2, >= 3.2.4)
       cucumber-ci-environment (~> 9.0, >= 9.0.4)
@@ -26,37 +26,37 @@ GEM
       mime-types (~> 3.4, >= 3.4.1)
       multi_test (~> 1.1, >= 1.1.0)
       sys-uname (~> 1.2, >= 1.2.2)
-    cucumber-ci-environment (9.0.4)
+    cucumber-ci-environment (9.2.0)
     cucumber-core (11.0.0)
       cucumber-gherkin (~> 23.0, >= 23.0.1)
       cucumber-messages (~> 18.0, >= 18.0.0)
       cucumber-tag-expressions (~> 4.1, >= 4.1.0)
-    cucumber-cucumber-expressions (15.1.1)
+    cucumber-cucumber-expressions (15.2.0)
     cucumber-gherkin (23.0.1)
       cucumber-messages (~> 18.0, >= 18.0.0)
-    cucumber-html-formatter (19.1.0)
+    cucumber-html-formatter (19.2.0)
       cucumber-messages (~> 18.0, >= 18.0.0)
     cucumber-messages (18.0.0)
     cucumber-tag-expressions (4.1.0)
     diff-lcs (1.5.0)
     docopt (0.6.1)
-    execjs (2.7.0)
+    execjs (2.8.1)
     ffi (1.15.5)
     haml (5.2.2)
       temple (>= 0.8.0)
       tilt
-    iodine (0.7.51)
+    iodine (0.7.56)
     matrix (0.4.2)
-    mime-types (3.4.1)
+    mime-types (3.5.0)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2022.0105)
-    mini_mime (1.1.2)
+    mime-types-data (3.2023.0808)
+    mini_mime (1.1.5)
     mini_portile2 (2.8.4)
     multi_json (1.15.0)
     multi_test (1.1.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
-    newrelic_rpm (8.6.0)
+    newrelic_rpm (9.3.1)
     nokogiri (1.15.3)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
@@ -68,7 +68,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.15.3-x86_64-linux)
       racc (~> 1.4)
-    public_suffix (5.0.0)
+    public_suffix (5.0.3)
     pwqgen.rb (0.1.0)
       docopt (~> 0.5)
       sysrandom
@@ -77,20 +77,20 @@ GEM
     rack-protection (3.1.0)
       rack (~> 2.2, >= 2.2.4)
     rack-ssl-enforcer (0.2.9)
-    rack-test (2.0.2)
+    rack-test (2.1.0)
       rack (>= 1.3)
     rack-timeout (0.6.3)
     rake (13.0.6)
-    rdiscount (2.2.7)
-    regexp_parser (2.6.0)
-    rexml (3.2.5)
-    rspec-expectations (3.12.0)
+    rdiscount (2.2.7.1)
+    regexp_parser (2.8.1)
+    rexml (3.2.6)
+    rspec-expectations (3.12.3)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
-    rspec-support (3.12.0)
+    rspec-support (3.12.1)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
-    selenium-webdriver (4.7.1)
+    selenium-webdriver (4.11.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
@@ -105,13 +105,13 @@ GEM
       rack-protection (= 3.1.0)
       sinatra (= 3.1.0)
       tilt (~> 2.0)
-    sprockets (4.1.1)
+    sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
-      rack (> 1, < 3)
-    sys-uname (1.2.2)
+      rack (>= 2.2.4, < 4)
+    sys-uname (1.2.3)
       ffi (~> 1.1)
     sysrandom (1.0.5)
-    temple (0.8.2)
+    temple (0.10.2)
     tilt (2.2.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
@@ -129,7 +129,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   cucumber
-  haml
+  haml (~> 5.2)
   iodine (~> 0.7)
   newrelic_rpm
   pwqgen.rb (~> 0.1)
@@ -147,7 +147,7 @@ DEPENDENCIES
   uglifier
 
 RUBY VERSION
-   ruby 3.1.2p20
+   ruby 3.2.2p53
 
 BUNDLED WITH
    2.4.18

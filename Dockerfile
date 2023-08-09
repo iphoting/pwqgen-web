@@ -1,4 +1,4 @@
-FROM ruby:3.1.2-alpine AS builder
+FROM ruby:3.2.2-alpine AS builder
 
 RUN \
 	apk update && apk upgrade && \
@@ -16,7 +16,7 @@ ENV BUNDLE_DEPLOYMENT="true"
 RUN gem install bundler && bundle install --no-cache
 RUN rm -rf vendor/bundle/ruby/*/cache/
 
-FROM ruby:3.1.2-alpine
+FROM ruby:3.2.2-alpine
 
 WORKDIR /usr/src/app
 COPY --from=builder /usr/src/app/vendor/ ./vendor/

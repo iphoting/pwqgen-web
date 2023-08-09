@@ -5,7 +5,7 @@ ruby File.read('.ruby-version', mode: 'rb').chomp
 gem 'rack'
 gem 'sinatra', "~> 3.1"
 gem 'sinatra-contrib'
-gem 'haml'
+gem 'haml', "~> 5.2"
 gem 'rdiscount'
 gem 'rack-ssl-enforcer'
 gem 'rack-timeout'

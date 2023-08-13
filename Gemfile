@@ -27,3 +27,7 @@ group :test do
 	gem 'rspec-expectations'
 	gem 'rake'
 end
+
+group :development do
+	gem 'puma'
+end

@@ -70,7 +70,7 @@ GEM
     nokogiri (1.15.3-x86_64-linux)
       racc (~> 1.4)
     public_suffix (5.0.3)
-    puma (6.3.0)
+    puma (6.3.1)
       nio4r (~> 2.0)
     pwqgen.rb (0.1.0)
       docopt (~> 0.5)

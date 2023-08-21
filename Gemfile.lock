@@ -56,7 +56,6 @@ GEM
     multi_test (1.1.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
-    newrelic_rpm (9.3.1)
     nio4r (2.5.9)
     nokogiri (1.15.3)
       mini_portile2 (~> 2.8.2)
@@ -134,7 +133,6 @@ DEPENDENCIES
   cucumber
   haml (~> 5.2)
   iodine (~> 0.7)
-  newrelic_rpm
   puma
   pwqgen.rb (~> 0.1)
   rack

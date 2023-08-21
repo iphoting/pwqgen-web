@@ -16,7 +16,6 @@ gem 'pwqgen.rb', "~> 0.1"
 gem 'sys-uname'
 
 group :production do
-	gem 'newrelic_rpm'
 	gem 'iodine', '~> 0.7'
 end
 

@@ -12,11 +12,8 @@ require 'rack-timeout'
 require 'sys/uname'
 require 'pwqgen'
 
-configure :production do
-	require 'newrelic_rpm' if ENV["NEW_RELIC_LICENSE_KEY"] and ENV["NEW_RELIC_APP_NAME"]
-	require 'rack/ssl-enforcer'
-	use Rack::SslEnforcer, :hsts => true
-end
+require 'rack/ssl-enforcer'
+use Rack::SslEnforcer, :hsts => true, :only_environments => 'production'
 
 use Rack::Timeout, service_timeout: 10
 use Rack::ConditionalGet

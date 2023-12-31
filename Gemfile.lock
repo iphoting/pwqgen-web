@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
+    base64 (0.2.0)
     builder (3.2.4)
     capybara (3.39.2)
       addressable
@@ -73,7 +74,8 @@ GEM
       sysrandom
     racc (1.7.1)
     rack (2.2.8)
-    rack-protection (3.1.0)
+    rack-protection (3.2.0)
+      base64 (>= 0.1.0)
       rack (~> 2.2, >= 2.2.4)
     rack-ssl-enforcer (0.2.9)
     rack-test (2.1.0)
@@ -93,16 +95,16 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    sinatra (3.1.0)
+    sinatra (3.2.0)
       mustermann (~> 3.0)
       rack (~> 2.2, >= 2.2.4)
-      rack-protection (= 3.1.0)
+      rack-protection (= 3.2.0)
       tilt (~> 2.0)
-    sinatra-contrib (3.1.0)
-      multi_json
+    sinatra-contrib (3.2.0)
+      multi_json (>= 0.0.2)
       mustermann (~> 3.0)
-      rack-protection (= 3.1.0)
-      sinatra (= 3.1.0)
+      rack-protection (= 3.2.0)
+      sinatra (= 3.2.0)
       tilt (~> 2.0)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
@@ -111,7 +113,7 @@ GEM
       ffi (~> 1.1)
     sysrandom (1.0.5)
     temple (0.10.2)
-    tilt (2.2.0)
+    tilt (2.3.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     websocket (1.2.10)
@@ -139,7 +141,7 @@ DEPENDENCIES
   rdiscount
   rspec-expectations
   selenium-webdriver
-  sinatra (~> 3.1)
+  sinatra (~> 3.2)
   sinatra-contrib
   sprockets
   sys-uname

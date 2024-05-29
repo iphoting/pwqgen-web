@@ -3,6 +3,8 @@ ruby File.read('.ruby-version', mode: 'rb').chomp
 #ruby-gemset=pwqgen
 
 gem 'rack'
+gem 'rack-session'
+gem 'rackup'
 gem 'sinatra', "~> 4.0"
 gem 'sinatra-contrib'
 gem 'haml', "~> 5.2"

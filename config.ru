@@ -1,5 +1,3 @@
-#!/usr/bin/env rakeup
-#\ -E deployment
 
 map '/assets' do
 	require 'sprockets'

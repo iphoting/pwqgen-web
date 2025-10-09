@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
-    base64 (0.2.0)
+    base64 (0.3.0)
     bigdecimal (3.1.8)
     builder (3.2.4)
     capybara (3.40.0)
@@ -59,7 +59,7 @@ GEM
     mini_portile2 (2.8.9)
     multi_json (1.15.0)
     multi_test (1.1.0)
-    mustermann (3.0.0)
+    mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.7.4)
     nokogiri (1.18.9)
@@ -81,8 +81,9 @@ GEM
       sysrandom
     racc (1.8.1)
     rack (3.1.17)
-    rack-protection (4.0.0)
+    rack-protection (4.2.0)
       base64 (>= 0.1.0)
+      logger (>= 1.6.0)
       rack (>= 3.0.0, < 4)
     rack-session (2.1.1)
       base64 (>= 0.1.0)
@@ -110,17 +111,18 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    sinatra (4.0.0)
+    sinatra (4.2.0)
+      logger (>= 1.6.0)
       mustermann (~> 3.0)
       rack (>= 3.0.0, < 4)
-      rack-protection (= 4.0.0)
+      rack-protection (= 4.2.0)
       rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
-    sinatra-contrib (4.0.0)
+    sinatra-contrib (4.2.0)
       multi_json (>= 0.0.2)
       mustermann (~> 3.0)
-      rack-protection (= 4.0.0)
-      sinatra (= 4.0.0)
+      rack-protection (= 4.2.0)
+      sinatra (= 4.2.0)
       tilt (~> 2.0)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
@@ -129,7 +131,7 @@ GEM
       ffi (~> 1.1)
     sysrandom (1.0.5)
     temple (0.10.3)
-    tilt (2.3.0)
+    tilt (2.6.1)
     uglifier (4.2.1)
       execjs (>= 0.3.0, < 3)
     webrick (1.8.2)
@@ -160,7 +162,7 @@ DEPENDENCIES
   rdiscount
   rspec-expectations
   selenium-webdriver
-  sinatra (~> 4.0)
+  sinatra (~> 4.2)
   sinatra-contrib
   sprockets
   sys-uname

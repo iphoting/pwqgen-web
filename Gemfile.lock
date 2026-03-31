@@ -49,10 +49,10 @@ GEM
     ffi (1.17.4-arm64-darwin)
     ffi (1.17.4-x86_64-darwin)
     ffi (1.17.4-x86_64-linux-gnu)
-    haml (5.2.2)
-      temple (>= 0.8.0)
+    haml (7.2.0)
+      temple (>= 0.8.2)
+      thor
       tilt
-    json (2.13.2)
     logger (1.7.0)
     matrix (0.4.3)
     memoist3 (1.0.0)
@@ -133,7 +133,8 @@ GEM
       memoist3 (~> 1.0.0)
     sysrandom (1.0.5)
     temple (0.10.4)
-    tilt (2.6.1)
+    thor (1.5.0)
+    tilt (2.7.0)
     uglifier (4.2.1)
       execjs (>= 0.3.0, < 3)
     websocket (1.2.11)
@@ -150,7 +151,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   cucumber
-  haml (~> 5.2)
+  haml (~> 7.2)
   puma
   pwqgen.rb (~> 0.1)
   rack

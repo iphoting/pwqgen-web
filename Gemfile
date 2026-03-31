@@ -7,7 +7,7 @@ gem 'rack-session'
 gem 'rackup'
 gem 'sinatra', "~> 4.2"
 gem 'sinatra-contrib'
-gem 'haml', "~> 5.2"
+gem 'haml', "~> 7.2"
 gem 'rdiscount'
 gem 'rack-ssl-enforcer'
 gem 'rack-timeout'

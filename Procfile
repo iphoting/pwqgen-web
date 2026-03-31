@@ -1,1 +1,1 @@
-web: bundle exec iodine -p ${PORT}
+web: bundle exec puma -p ${PORT}

@@ -52,7 +52,7 @@ GEM
     haml (5.2.2)
       temple (>= 0.8.0)
       tilt
-    iodine (0.7.58)
+    json (2.13.2)
     logger (1.7.0)
     matrix (0.4.3)
     memoist3 (1.0.0)
@@ -151,7 +151,6 @@ DEPENDENCIES
   capybara
   cucumber
   haml (~> 5.2)
-  iodine (~> 0.7)
   puma
   pwqgen.rb (~> 0.1)
   rack
@@ -170,7 +169,7 @@ DEPENDENCIES
   uglifier
 
 RUBY VERSION
-   ruby 3.2.2p53
+   ruby 3.4.9p0
 
 BUNDLED WITH
-   2.5.10
+   4.0.9

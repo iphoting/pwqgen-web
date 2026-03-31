@@ -1,0 +1,41 @@
+name: docker
+permissions:
+  contents: read
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build image
+        run: docker build -t app .
+
+      - name: Start container
+        run: docker run -d --name app -p 9292:9292 -e RACK_ENV=development app bundle exec rackup -o 0.0.0.0
+
+      - name: Wait for container to be ready
+        run: |
+          for i in $(seq 1 30); do
+            STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:9292/ 2>/dev/null) || true
+            if [ "$STATUS" = "200" ]; then
+              echo "App is ready"
+              exit 0
+            fi
+            echo "Waiting... ($i) got: $STATUS"
+            sleep 2
+          done
+          echo "App failed to become ready"
+          docker logs app
+          exit 1
+
+      - name: Smoke test — expect HTTP 200
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:9292/)
+          echo "HTTP status: $STATUS"
+          [ "$STATUS" = "200" ]

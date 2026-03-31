@@ -18,7 +18,7 @@ gem 'pwqgen.rb', "~> 0.1"
 gem 'sys-uname'
 
 group :production do
-	gem 'iodine', '~> 0.7'
+	gem 'puma'
 end
 
 group :test do

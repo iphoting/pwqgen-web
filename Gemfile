@@ -16,10 +16,7 @@ gem 'uglifier'
 
 gem 'pwqgen.rb', "~> 0.1"
 gem 'sys-uname'
-
-group :production do
-	gem 'puma'
-end
+gem 'puma'
 
 group :test do
 	gem 'cucumber'
@@ -27,8 +24,4 @@ group :test do
 	gem 'selenium-webdriver'
 	gem 'rspec-expectations'
 	gem 'rake'
-end
-
-group :development do
-	gem 'puma'
 end

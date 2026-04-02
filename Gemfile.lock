@@ -96,7 +96,7 @@ GEM
     rackup (2.3.1)
       rack (>= 3)
     rake (13.3.1)
-    rdiscount (2.2.7.3)
+    rdiscount (2.2.7.4)
     regexp_parser (2.11.3)
     rexml (3.4.4)
     rspec-expectations (3.13.5)

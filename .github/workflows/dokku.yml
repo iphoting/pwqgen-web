@@ -1,4 +1,3 @@
-
 name: 'deploy'
 permissions:
   contents: read
@@ -17,13 +16,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Cloning repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Configure SSH for Cloudflare tunnel
+        run: |
+          mkdir -p ~/.ssh
+          cat >> ~/.ssh/config <<'EOF'
+          Host dokku-ssh.iphoting.cc
+            ProxyCommand docker run --rm -i cloudflare/cloudflared:latest access ssh --hostname %h
+            StrictHostKeyChecking no
+          EOF
       - name: Push to dokku
-        uses: dokku/github-action@v1.3.0
+        uses: dokku/github-action@v1.4.0
         with:
           # specify `--force` as a flag for git pushes
           git_push_flags: '--force'
-          git_remote_url: 'ssh://dokku@c.iphoting.cc:3022/pwqgen'
+          git_remote_url: 'ssh://dokku@dokku-ssh.iphoting.cc/pwqgen'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}

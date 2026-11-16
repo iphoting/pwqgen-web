@@ -84,7 +84,7 @@ GEM
     prism (2.1.0-x86_64-darwin)
     prism (2.1.0-x86_64-linux-gnu)
     public_suffix (7.0.5)
-    puma (8.0.2)
+    puma (8.0.3)
       nio4r (~> 2.0)
     pwqgen.rb (0.1.0)
       docopt (~> 0.5)
